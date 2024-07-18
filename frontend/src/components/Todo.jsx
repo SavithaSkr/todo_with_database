@@ -18,7 +18,7 @@ const Todo = () => {
   const addTodoListData = async () => {
     const res = await fetch("http://localhost:8080/todolists", {
       method: "POST",
-      header: {
+      headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
